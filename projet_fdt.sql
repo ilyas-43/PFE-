@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 30 avr. 2025 à 16:25
--- Version du serveur : 10.4.32-MariaDB
--- Version de PHP : 8.2.12
+-- Généré le : jeu. 15 mai 2025 à 17:12
+-- Version du serveur : 10.4.28-MariaDB
+-- Version de PHP : 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,6 +43,32 @@ INSERT INTO `admin-cred` (`sr-no`, `admin-name`, `admin-pass`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `contact_details`
+--
+
+CREATE TABLE `contact_details` (
+  `sr-no` int(11) NOT NULL,
+  `address` varchar(50) NOT NULL,
+  `gmap` varchar(100) NOT NULL,
+  `pn1` varchar(30) NOT NULL,
+  `pn2` varchar(30) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `fb` varchar(100) NOT NULL,
+  `insta` varchar(100) NOT NULL,
+  `tw` varchar(100) NOT NULL,
+  `iframe` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `contact_details`
+--
+
+INSERT INTO `contact_details` (`sr-no`, `address`, `gmap`, `pn1`, `pn2`, `email`, `fb`, `insta`, `tw`, `iframe`) VALUES
+(1, 'HOTEL, ROYAL EMIRALD', 'https://maps.app.goo.gl/wE8G99Q7RQhNj1Xk9', ' +212000000000', ' +212000000000', 'ask.royalemirald@gmail.com', 'facebook.com', 'instagram.com', 'twitter.com', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6771.891146101964!2d-4.420873!3d31.935235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd984b5efb8432f1%3A0x69740a5129314f85!2sVue%20Panoramique%20Oued%20Ziz!5e0!3m2!1sfr!2sma!4v1747259966157!5m2!1sfr!2sma');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `settings`
 --
 
@@ -57,7 +83,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`sr_no`, `site_about`, `shutdown`) VALUES
-(1, 'ROYAL EMIRALD', 0);
+(1, 'ROYAL ', 0);
 
 --
 -- Index pour les tables déchargées
