@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 15 mai 2025 à 17:12
+-- Généré le : dim. 18 mai 2025 à 01:31
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.0.28
 
@@ -83,7 +83,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`sr_no`, `site_about`, `shutdown`) VALUES
-(1, 'ROYAL ', 0);
+(1, 'royal', 0);
 
 --
 -- Index pour les tables déchargées
