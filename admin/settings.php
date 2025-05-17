@@ -365,7 +365,7 @@
       contacts_s_form.addEventListener('submit',function(e){
         e.preventDefault();
         upd_contacts();
-      })
+      });
 
       function upd_contacts() 
       {
