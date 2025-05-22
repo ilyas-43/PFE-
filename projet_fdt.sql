@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 15 mai 2025 à 17:12
--- Version du serveur : 10.4.28-MariaDB
--- Version de PHP : 8.0.28
+-- Généré le : jeu. 22 mai 2025 à 23:15
+-- Version du serveur : 10.4.32-MariaDB
+-- Version de PHP : 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,7 +38,7 @@ CREATE TABLE `admin-cred` (
 --
 
 INSERT INTO `admin-cred` (`sr-no`, `admin-name`, `admin-pass`) VALUES
-(1, 'tjwebdev', '12345');
+(1, 'royalemirald', '12345');
 
 -- --------------------------------------------------------
 
@@ -47,7 +47,7 @@ INSERT INTO `admin-cred` (`sr-no`, `admin-name`, `admin-pass`) VALUES
 --
 
 CREATE TABLE `contact_details` (
-  `sr-no` int(11) NOT NULL,
+  `sr_no` int(11) NOT NULL,
   `address` varchar(50) NOT NULL,
   `gmap` varchar(100) NOT NULL,
   `pn1` varchar(30) NOT NULL,
@@ -63,8 +63,8 @@ CREATE TABLE `contact_details` (
 -- Déchargement des données de la table `contact_details`
 --
 
-INSERT INTO `contact_details` (`sr-no`, `address`, `gmap`, `pn1`, `pn2`, `email`, `fb`, `insta`, `tw`, `iframe`) VALUES
-(1, 'HOTEL, ROYAL EMIRALD', 'https://maps.app.goo.gl/wE8G99Q7RQhNj1Xk9', ' +212000000000', ' +212000000000', 'ask.royalemirald@gmail.com', 'facebook.com', 'instagram.com', 'twitter.com', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6771.891146101964!2d-4.420873!3d31.935235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd984b5efb8432f1%3A0x69740a5129314f85!2sVue%20Panoramique%20Oued%20Ziz!5e0!3m2!1sfr!2sma!4v1747259966157!5m2!1sfr!2sma');
+INSERT INTO `contact_details` (`sr_no`, `address`, `gmap`, `pn1`, `pn2`, `email`, `fb`, `insta`, `tw`, `iframe`) VALUES
+(1, 'HOTEL, ROYAL EMIRALD', 'https://maps.app.goo.gl/wE8G99Q7RQhNj1Xk9', ' 212000000000', ' 212000000000', 'ask.royalemirald@gmail.com', 'facebook.com', 'instagram.com/royalemirald', 'twitter.com', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6771.891146101964!2d-4.420873!3d31.935235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd984a94517783e1:0xef82d926649ed5f6!2sHotel Kenzi Rissani!5e0!3m2!1sfr!2sma!4v1747926743047!5m2!1sfr!2sma');
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`sr_no`, `site_about`, `shutdown`) VALUES
-(1, 'ROYAL ', 0);
+(1, 'ROYAL \n', 0);
 
 --
 -- Index pour les tables déchargées
@@ -94,6 +94,12 @@ INSERT INTO `settings` (`sr_no`, `site_about`, `shutdown`) VALUES
 --
 ALTER TABLE `admin-cred`
   ADD PRIMARY KEY (`sr-no`);
+
+--
+-- Index pour la table `contact_details`
+--
+ALTER TABLE `contact_details`
+  ADD PRIMARY KEY (`sr_no`);
 
 --
 -- Index pour la table `settings`
@@ -110,6 +116,12 @@ ALTER TABLE `settings`
 --
 ALTER TABLE `admin-cred`
   MODIFY `sr-no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT pour la table `contact_details`
+--
+ALTER TABLE `contact_details`
+  MODIFY `sr_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `settings`
