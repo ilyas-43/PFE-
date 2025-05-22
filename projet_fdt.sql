@@ -3,9 +3,15 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
+<<<<<<< HEAD
 -- Généré le : jeu. 22 mai 2025 à 23:15
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
+=======
+-- Généré le : dim. 18 mai 2025 à 01:31
+-- Version du serveur : 10.4.28-MariaDB
+-- Version de PHP : 8.0.28
+>>>>>>> edae396f902c6c128094976df61f02852c4d36da
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -83,7 +89,11 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`sr_no`, `site_about`, `shutdown`) VALUES
+<<<<<<< HEAD
 (1, 'ROYAL \n', 0);
+=======
+(1, 'royal', 0);
+>>>>>>> edae396f902c6c128094976df61f02852c4d36da
 
 --
 -- Index pour les tables déchargées
