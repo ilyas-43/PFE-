@@ -57,12 +57,11 @@
                 </div>
               </div>
 
-              <!-- Shutdown  section -->
-
-              <div class="card border-0 shadow-sm" >
+              <!-- Shutdown section -->
+              <div class="card border-0 shadow-sm mb-4" >
                 <div class="card-body">
                   <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h5 class="card-title m-0">Shutdon Website</h5>
+                    <h5 class="card-title m-0">Shutdown Website</h5>
                     <div class="form-check form-switch">
                       <form>
                         <input onchange="upd_shutdown(this.value)" class="form-check-input" type="checkbox" id="shutdown-toggle">
@@ -75,11 +74,11 @@
                 </div>
               </div>
 
-              <!-- contact details section -->
+              <!-- Contact settings section -->
               <div class="card border-0 shadow-sm mb-4" >
                 <div class="card-body">
                   <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h5 class="card-title m-0">contacts Settings</h5>
+                    <h5 class="card-title m-0">Contact Settings</h5>
                     <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#contacts-s">
                       <i class="bi bi-pencil-square"></i>Edit
                     </button>
@@ -91,7 +90,7 @@
                          <p class="card-text" id="address"></p>
                       </div>
                       <div class="mb-4">
-                         <h6 class="card-subtitle mb-1 fw-bold">Google map</h6>
+                         <h6 class="card-subtitle mb-1 fw-bold">Google Map</h6>
                          <p class="card-text" id="gmap"></p>
                       </div>
                       <div class="mb-4">
@@ -112,7 +111,7 @@
                     </div>
                     <div class="col-lg-6">
                       <div class="mb-4">
-                         <h6 class="card-subtitle mb-1 fw-bold">social links </h6>
+                         <h6 class="card-subtitle mb-1 fw-bold">Social Links</h6>
                         <p class="card-text mb-1" >
                            <i class="bi bi-facebook me-1"></i>
                            <span id="fb"></span>
@@ -121,21 +120,88 @@
                            <i class="bi bi-instagram me-1"></i>
                            <span id="insta"></span>
                         </p>
-                        <p class="card-text " >
-                           <i class="bi bi-twitter me-1"></i></i>
+                        <p class="card-text" >
+                           <i class="bi bi-twitter me-1"></i>
                            <span id="tw"></span>
                         </p>
                       </div>
                       <div class="mb-4">
-                         <h6 class="card-subtitle mb-1 fw-bold">iframe </h6>
+                         <h6 class="card-subtitle mb-1 fw-bold">Iframe</h6>
                          <iframe id="iframe" class="border p-2 w-100" loading="lazy"></iframe>
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
 
+              <!-- Contact details modal -->
+              <div class="modal fade" id="contacts-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <form id="contacts_s_form">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Contact Settings</h5>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid p-0">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">Address</label>
+                                <input type="text" name="address" id="address_inp" class="form-control shadow-none" required>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">Google Map Link</label>
+                                <textarea name="gmap" id="gmap_inp" class="form-control shadow-none" rows="6" required></textarea>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">Phone Numbers (with country code)</label>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                                    <input type="text" name="pn1" id="pn1_inp" class="form-control shadow-none" required>
+                                  </div>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                                    <input type="text" name="pn2" id="pn2_inp" class="form-control shadow-none">
+                                  </div> 
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">Email</label>
+                                <input type="email" name="email" id="email_inp" class="form-control shadow-none" required>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">Social Links</label>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-facebook"></i></span>
+                                    <input type="text" name="fb" id="fb_inp" class="form-control shadow-none" required>
+                                  </div>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-instagram"></i></span>
+                                    <input type="text" name="insta" id="insta_inp" class="form-control shadow-none" required>
+                                  </div>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text"><i class="bi bi-twitter"></i></span>
+                                    <input type="text" name="tw" id="tw_inp" class="form-control shadow-none">
+                                  </div> 
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">iFrame Src</label>
+                                <input type="text" name="iframe" id="iframe_inp" class="form-control shadow-none" required>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" onclick="contacts_inp(contacts_data)" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
+                        <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -153,9 +219,6 @@
       function get_general()
       {
         let site_about = document.getElementById('site_about');
-
-
-
         let shutdown_toggle = document.getElementById('shutdown-toggle');
 
         let xhr = new XMLHttpRequest();
@@ -245,15 +308,62 @@
           contacts_data = JSON.parse(this.responseText);
           contacts_data = Object.values(contacts_data);
 
-          for(i=0;i<contacts_p_id.length;i++){
+          for(let i=0;i<contacts_p_id.length;i++){
             document.getElementById(contacts_p_id[i]).innerText = contacts_data[i+1];
           }
-          
-          // Initialiser les valeurs des inputs du modal
+          iframe.src = contacts_data[9];
           contacts_inp(contacts_data);
         }
 
         xhr.send('get_contacts');
+      }
+
+      function contacts_inp(data)
+      {
+        let contacts_inp_id = ['address_inp','gmap_inp','pn1_inp','pn2_inp','email_inp','fb_inp','insta_inp','tw_inp','iframe_inp'];
+
+        for(let i=0;i<contacts_inp_id.length;i++){
+            document.getElementById(contacts_inp_id[i]).value = data[i+1];
+        }
+      }
+
+      contacts_s_form.addEventListener('submit',function(e){
+        e.preventDefault();
+        upd_contacts();
+      });
+
+      function upd_contacts()
+      {
+        let index = ['address','gmap','pn1','pn2','email','fb','insta','tw','iframe'];
+        let contacts_inp_id = ['address_inp','gmap_inp','pn1_inp','pn2_inp','email_inp','fb_inp','insta_inp','tw_inp','iframe_inp'];
+
+        let data_str="";
+
+        for(let i=0;i<index.length;i++){
+          data_str += index[i] + "=" + document.getElementById(contacts_inp_id[i]).value + '&';
+        }
+        data_str += "upd_contacts";
+
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST","ajax/settings_crud.php",true);
+        xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+
+        xhr.onload = function(){
+          var myModal = document.getElementById('contacts-s');
+          var modal = bootstrap.Modal.getInstance(myModal);
+          modal.hide();
+          if(this.responseText == 1)
+          {
+            alert('success','Changes saved !');
+            get_contacts();
+          }
+          else
+          {
+            alert('error','No changes made !');
+          }
+        }
+
+        xhr.send(data_str);
       }
 
       window.onload = function(){
