@@ -203,7 +203,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
 
     <?php require('inc/scripts.php'); ?>
