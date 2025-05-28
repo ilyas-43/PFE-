@@ -21,21 +21,19 @@
     <h2 class="fw-bold h-font text-center">ABOUT US</h2>
     <div class="h-line bg-dark"></div>
     <p class="text-center mt-3">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Illum ut cumque maiores <br> quod fugiat,
-      eveniet assumenda quam reiciendis deserunt quaerat.
+      Welcome to our hotel, where comfort meets hospitality. We are dedicated to providing a memorable experience with modern amenities, <br> attentive service, and a warm atmosphere. Whether you’re here for business or leisure, our goal is to make your stay enjoyable and relaxing.
     </p>
   </div>
 
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-        <h3 class="mb-3">Lorem ipsum dolor sit</h3>
+        <h3 class="mb-3">About us</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Rerum sint minima ad error animi voluptatum esse!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Rerum sint minima ad error animi voluptatum esse!
+          Welcome to our hotel, where comfort and quality service come together to create an unforgettable stay.
+          Located in the heart of the city, we offer modern rooms, excellent amenities,
+          and a friendly staff dedicated to making your visit as pleasant as possible.
+          Whether you’re traveling for business or leisure, our hotel is the perfect choice for relaxation and convenience.
         </p>
       </div>
       <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
@@ -79,32 +77,28 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper mb-5">
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="images/about/team.jpg" class="w-100">
+          <img src="images/about/1.jpg" class="w-100">
+          <h5 class="mt-2">Sophia Nguyen</h5>
+        </div>
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="images/about/2.jpg" class="w-100">
+          <h5 class="mt-2">Emma Clark</h5>
+        </div>
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="images/about/3.avif" class="w-100">
           <h5 class="mt-2">Random Name</h5>
         </div>
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="images/about/team.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
+          <img src="images/about/3.avif" class="w-100">
+          <h5 class="mt-2">Daniel Foster</h5>
         </div>
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="images/about/team.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
+          <img src="images/about/2.jpg" class="w-100">
+          <h5 class="mt-2">Ethan Bennett</h5>
         </div>
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="images/about/team.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
-        </div>
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="images/about/team.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
-        </div>
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="images/about/team.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
-        </div>
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="images/about/team.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
+          <img src="images/about/1.jpg" class="w-100">
+          <h5 class="mt-2">Liam Rodriguez</h5>
         </div>
       </div>
       <div class="swiper-pagination"></div>

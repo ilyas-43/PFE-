@@ -3,19 +3,19 @@
         <div class="col-lg-4 p-4">
             <img src="images/logo/trans_bg.png"  height="50">
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Officia exercitationem ad tenetur iure similique maiores
-            suscipit provident nulla, ipsum harum ex, perferendis 
-            voluptate atqueEarum molestias quo ipsum mollitia beatae?
+            Our hotel welcomes you in a comfortable and warm setting,
+            ideally located in the heart of the city. Enjoy modern rooms,
+            attentive service, and a delicious breakfast for a pleasant stay,
+            whether for business or leisure.
             </p>
         </div>
         <div class="col-lg-4 p-4">
             <h5 class="mb-3">Links</h5>
-            <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a> <br>
-            <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Rooms</a> <br>
-            <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Facilities</a> <br>
-            <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Contact us</a> <br>
-            <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">About</a>
+            <a href="index.php" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a> <br>
+            <a href="rooms.php" class="d-inline-block mb-2 text-dark text-decoration-none">Rooms</a> <br>
+            <a href="facilities.php" class="d-inline-block mb-2 text-dark text-decoration-none">Facilities</a> <br>
+            <a href="contact.php" class="d-inline-block mb-2 text-dark text-decoration-none">Contact us</a> <br>
+            <a href="about.php" class="d-inline-block mb-2 text-dark text-decoration-none">About</a>
         </div>
         <div class="col-lg-4 p-4">
             <h5 class="mb-3">Follow us</h5>

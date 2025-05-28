@@ -1,7 +1,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
         <div class="container-fluid">
-        <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="#"><img src="images/logo/trans_bg.png"  height="50"></a>
+        <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.php"><img src="images/logo/trans_bg.png"  height="50"></a>
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>

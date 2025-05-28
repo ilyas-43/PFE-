@@ -310,7 +310,7 @@
         <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
           <img src="images/rooms/1.jpg" class="card-img-top">
           <div class="card-body">
-            <h5>Simple Room Name</h5>
+            <h5>Standard Room</h5>
             <h6 class="mb-4">200$ per night</h6>
             <div class="features mb-4">
               <h6 class="mb-1">Features</h6>
@@ -362,16 +362,16 @@
             </div>
             <div class="d-flex justify-content-evenly mb-2">
               <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-              <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
+              <a href="rooms.php" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 my-3">
         <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-          <img src="images/rooms/1.jpg" class="card-img-top">
+          <img src="images/rooms/2.png" class="card-img-top">
           <div class="card-body">
-            <h5>Simple Room Name</h5>
+            <h5>Comfort Room</h5>
             <h6 class="mb-4">200$ per night</h6>
             <div class="features mb-4">
               <h6 class="mb-1">Features</h6>
@@ -423,16 +423,16 @@
             </div>
             <div class="d-flex justify-content-evenly mb-2">
               <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-              <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
+              <a href="rooms.php" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 my-3">
         <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-          <img src="images/rooms/1.jpg" class="card-img-top">
+          <img src="images/rooms/3.png" class="card-img-top">
           <div class="card-body">
-            <h5>Simple Room Name</h5>
+            <h5>City View Room</h5>
             <h6 class="mb-4">200$ per night</h6>
             <div class="features mb-4">
               <h6 class="mb-1">Features</h6>
@@ -484,14 +484,14 @@
             </div>
             <div class="d-flex justify-content-evenly mb-2">
               <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-              <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
+              <a href="rooms.php" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="col-lg-12 text-center mt-5">
-        <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Rooms>>></a>
+        <a href="rooms.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Rooms>>></a>
       </div>
     </div>
   </div>
@@ -507,23 +507,23 @@
         <h5 class="mt-3">Wifi</h5>
       </div>
       <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-        <img src="images/features/wifi.svg" width="80px">
-        <h5 class="mt-3">Wifi</h5>
+        <img src="images/features/air.svg" width="80px">
+        <h5 class="mt-3">Room Heater</h5>
       </div>
       <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-        <img src="images/features/wifi.svg" width="80px">
-        <h5 class="mt-3">Wifi</h5>
+        <img src="images/features/air1.svg" width="80px">
+        <h5 class="mt-3">Air conditioner</h5>
       </div>
       <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-        <img src="images/features/wifi.svg" width="80px">
-        <h5 class="mt-3">Wifi</h5>
+        <img src="images/features/spa.svg" width="80px">
+        <h5 class="mt-3">Spa</h5>
       </div>
       <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
-        <img src="images/features/wifi.svg" width="80px">
-        <h5 class="mt-3">Wifi</h5>
+        <img src="images/features/3.svg" width="80px">
+        <h5 class="mt-3">Television</h5>
       </div>
       <div class="col-lg-12 text-center mt-5">
-        <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Facilities>>></a>
+        <a href="facilities.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Facilities>>></a>
       </div>
     </div>
   </div>
@@ -540,13 +540,12 @@
       <!-- Slide 1 -->
       <div class="swiper-slide bg-white p-4">
         <div class="profile d-flex align-items-center mb-3">
-          <img src="images/features/wifi.svg" width="30px">
-          <h6 class="m-0 ms-2">Random user1</h6>
+          <img src="images/features/6.png" width="30px">
+          <h6 class="m-0 ms-2">Customer 1</h6>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Quos ex repellat earum delectus in amet iste eligendi 
-          pariatur impedit cum!
+          "Excellent séjour ! 
+           Chambre confortable et service impeccable."
         </p>
         <div class="rating">
           <i class="bi bi-star-fill text-warning"></i>
@@ -559,12 +558,12 @@
       <!-- Slide 2 -->
       <div class="swiper-slide bg-white p-4">
         <div class="profile d-flex align-items-center mb-3">
-          <img src="images/features/wifi.svg" width="30px">
-          <h6 class="m-0 ms-2">Random user2</h6>
+          <img src="images/features/6.png" width="30px">
+          <h6 class="m-0 ms-2">Customer 2</h6>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Tenetur, voluptatum. Dolores deserunt officia quasi.
+          "Très bon accueil,
+           hôtel calme et bien situé. Je reviendrai !"
         </p>
         <div class="rating">
           <i class="bi bi-star-fill text-warning"></i>
@@ -577,12 +576,12 @@
       <!-- Slide 3 -->
       <div class="swiper-slide bg-white p-4">
         <div class="profile d-flex align-items-center mb-3">
-          <img src="images/features/wifi.svg" width="30px">
-          <h6 class="m-0 ms-2">Random user3</h6>
+          <img src="images/features/7.webp" width="30px">
+          <h6 class="m-0 ms-2">Customer 3</h6>
         </div>
         <p>
-          Nemo quibusdam temporibus aspernatur, excepturi doloribus
-          alias minima eligendi sed reiciendis aperiam.
+          "Super expérience !
+           Tout était parfait du début à la fin."
         </p>
         <div class="rating">
           <i class="bi bi-star-fill text-warning"></i>
@@ -597,7 +596,7 @@
   </div> <!-- swiper -->
 
   <div class="col-lg-12 text-center mt-5">
-    <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">Know More >>></a>
+    <a href="about.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">Know More >>></a>
   </div>
 </div>
 

@@ -22,9 +22,7 @@
     <h2 class="fw-bold h-font text-center">OUR FACILITIES</h2>
     <div class="h-line bg-dark"></div>
     <p class="text-center mt-3">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Illum ut cumque maiores <br> quod fugiat,
-      eveniet assumenda quam reiciendis deserunt quaerat.
+      Our hotel offers a wide range of services  <br> and amenities to make your stay as pleasant as possible:
     </p>
   </div>
 
@@ -37,68 +35,66 @@
             <h5 class="m-0 ms-3">Wifi</h5>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Optio fuga, dolorum autem ea modi possimus esse.
+            Enjoy fast and reliable Wi-Fi throughout the hotel, free for all guests.
           </p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
           <div class="d-flex align-items-center mb-2">
-            <img src="images/features/wifi.svg" width="40px">
-            <h5 class="m-0 ms-3">Wifi</h5>
+            <img src="images/features/air.svg" width="40px">
+            <h5 class="m-0 ms-3">Room Heater</h5>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Optio fuga, dolorum autem ea modi possimus esse.
+            Stay cozy and warm with our efficient in-room heaters,
+            ensuring your comfort during cooler nights.
           </p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
           <div class="d-flex align-items-center mb-2">
-            <img src="images/features/wifi.svg" width="40px">
-            <h5 class="m-0 ms-3">Wifi</h5>
+            <img src="images/features/air1.svg" width="40px">
+            <h5 class="m-0 ms-3">Air conditioner</h5>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Optio fuga, dolorum autem ea modi possimus esse.
+            Enjoy a cool and comfortable stay with our air-conditioned rooms,
+             perfect for beating the heat.
           </p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
           <div class="d-flex align-items-center mb-2">
-            <img src="images/features/wifi.svg" width="40px">
-            <h5 class="m-0 ms-3">Wifi</h5>
+            <img src="images/features/spa.svg" width="40px">
+            <h5 class="m-0 ms-3">Spa</h5>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Optio fuga, dolorum autem ea modi possimus esse.
+            Relax and rejuvenate in our serene spa,
+            offering a range of treatments to refresh your body and mind.
           </p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
           <div class="d-flex align-items-center mb-2">
-            <img src="images/features/wifi.svg" width="40px">
-            <h5 class="m-0 ms-3">Wifi</h5>
+            <img src="images/features/3.svg" width="40px">
+            <h5 class="m-0 ms-3">Television</h5>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Optio fuga, dolorum autem ea modi possimus esse.
+            Each room is equipped with a flat-screen TV offering a variety of channels for your entertainment.
           </p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5 px-4">
         <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
           <div class="d-flex align-items-center mb-2">
-            <img src="images/features/wifi.svg" width="40px">
-            <h5 class="m-0 ms-3">Wifi</h5>
+            <img src="images/features/10.svg" width="40px">
+            <h5 class="m-0 ms-3">Geyser</h5>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Optio fuga, dolorum autem ea modi possimus esse.
+            Enjoy hot water anytime with our efficient in-room geysers,
+            ensuring a comfortable bathing experience.
           </p>
         </div>
       </div>

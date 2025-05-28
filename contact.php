@@ -15,9 +15,7 @@
     <h2 class="fw-bold h-font text-center">CONTACT US</h2>
     <div class="h-line bg-dark"></div>
     <p class="text-center mt-3">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Illum ut cumque maiores <br> quod fugiat,
-      eveniet assumenda quam reiciendis deserunt quaerat.
+      We’re here to answer your questions and help you plan your stay. Feel free to reach out by phone, email, or through the form below.  <br> Our team will respond promptly to provide you with the best service possible.
     </p>
   </div>
 
