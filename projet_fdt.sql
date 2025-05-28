@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 23 mai 2025 à 14:10
--- Version du serveur : 10.4.32-MariaDB
--- Version de PHP : 8.2.12
+-- Généré le : mer. 28 mai 2025 à 09:31
+-- Version du serveur : 10.4.28-MariaDB
+-- Version de PHP : 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `projet fdt`
+-- Base de données : `projet_fdt`
 --
 
 -- --------------------------------------------------------
@@ -84,6 +84,18 @@ CREATE TABLE `settings` (
 
 INSERT INTO `settings` (`sr_no`, `site_about`, `shutdown`) VALUES
 (1, 'ROYAL \n', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `team_details`
+--
+
+CREATE TABLE `team_details` (
+  `sr-no` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `picture` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Index pour les tables déchargées

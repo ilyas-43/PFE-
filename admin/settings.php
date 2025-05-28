@@ -202,6 +202,60 @@
                   </form>
                 </div>
               </div>
+               <!-- management team  section -->
+              <div class="card border-0 shadow-sm mb-4" >
+                <div class="card-body">
+                  <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h5 class="card-title m-0"> management team</h5>
+                    <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#team-s">
+                      <i class="bi bi-plus-square"></i>add
+                    </button>
+                  </div>
+                  <div class="row" id="team-data">
+                    <div class="col-md-2 mb-3">
+                      <div class="card bg-dark text-white">
+                        <img src="../images/about/team.jpg" class="card-img" >
+                        <div class="card-img-overlay text-end">
+                          <button type="button" onclick="remove_Member('1')" class="btn btn-danger btn-sm shadow-none">
+                            <i class="bi bi-trash"></i>delete
+                          </button>
+                        </div>
+                        <p class="card-text text-center px-2 py-2">Random Name</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                </div>
+              </div>
+               <!-- management team  modal -->
+              <div class="modal fade" id="team-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <form id="team_s_form">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">add team Member</h5>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label class="form-label fw-bold">name</label>
+                          <input type="text" name="Member_name" id="Member_name_inp" class="form-control shadow-none" required />
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label fw-bold">Picture</label>
+                          <input type="file" name="Member_picture" id="Member_picture_inp" accept=".jpg,.jpeg,.png,.webp" class="form-control shadow-none" required />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button"  class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
+                        <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
             </div>
           </div> 
         </div>
@@ -215,6 +269,10 @@
       let site_about_inp = document.getElementById('site_about_inp');
 
       let contacts_s_form = document.getElementById('contacts_s_form');
+
+      let team_s_form = document.getElementById('team_s_form');
+      let Member_name_inp  = document.getElementById('Member_name_inp');
+      let Member_picture_inp = document.getElementById('Member_picture_inp');
 
       function get_general()
       {
@@ -366,9 +424,66 @@
         xhr.send(data_str);
       }
 
+      team_s_form.addEventListener('submit',function(e){
+        e.preventDefault();
+        add_Member();
+      });
+
+      function add_Member()
+      {
+        let data = new FormData();
+        data.append('name',Member_name_inp.value);
+        data.append('picture',Member_picture_inp.files[0]);
+        data.append('add_Member','');
+
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST","ajax/settings_crud.php",true);
+        
+
+        xhr.onload = function(){
+          var myModal = document.getElementById('team-s');
+          var modal = bootstrap.Modal.getInstance(myModal);
+          modal.hide();
+          
+          if(this.responseText == 'inv_img'){
+            alert('error','Only JPG and PNG images are allowed!');
+          }
+          else if(this.responseText == 'inv_size'){
+             alert('error','Image should be less than 2MB!');
+          }
+          else if(this.responseText == 'upd_failed'){
+            alert('error','Image upload failed. Server Down!');
+          }
+          else{
+            alert('success','New Member Added!');
+            Member_name_inp.value='';
+            Member_picture_inp.value='';
+
+          }
+
+        }
+
+        xhr.send(data);
+      }
+
+      function get_Members()
+      {
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST","ajax/settings_crud.php",true);
+        xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+
+        xhr.onload = function(){
+          document.getElementById('team-data').innerHTML = this.responseText;
+        }
+
+        xhr.send('get_Members');
+      }
+
+
       window.onload = function(){
         get_general();
         get_contacts();
+        get_Members();
       }
     </script>
 </body>
