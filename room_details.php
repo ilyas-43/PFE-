@@ -107,7 +107,7 @@
                 1 Child
               </span>
             </div>
-            <button class="btn w-100 text-white custom-bg shadow-none mb-1">Book Now</button>
+            <a href="booking.php?room=Standard Room" class="btn w-100 text-white custom-bg shadow-none mb-1">  Book Now </a>
           </div>
         </div>
       </div>
