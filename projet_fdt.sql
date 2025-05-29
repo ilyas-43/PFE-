@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 28 mai 2025 à 12:33
--- Version du serveur : 10.4.28-MariaDB
--- Version de PHP : 8.0.28
+-- Généré le : jeu. 29 mai 2025 à 12:51
+-- Version du serveur : 10.4.32-MariaDB
+-- Version de PHP : 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -69,6 +69,30 @@ INSERT INTO `contact_details` (`sr_no`, `address`, `gmap`, `pn1`, `pn2`, `email`
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `reservations`
+--
+
+CREATE TABLE `reservations` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(100) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `tel` varchar(20) DEFAULT NULL,
+  `arrivee` date DEFAULT NULL,
+  `depart` date DEFAULT NULL,
+  `chambre` varchar(100) DEFAULT NULL,
+  `date_reservation` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `reservations`
+--
+
+INSERT INTO `reservations` (`id`, `nom`, `email`, `tel`, `arrivee`, `depart`, `chambre`, `date_reservation`) VALUES
+(1, 'ilyas', 'ilyasbenmoumen11@gmail.com', '0632457464', '2025-05-29', '2025-05-30', 'Standard Room', '2025-05-29 08:32:45');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `settings`
 --
 
@@ -114,6 +138,12 @@ ALTER TABLE `contact_details`
   ADD PRIMARY KEY (`sr_no`);
 
 --
+-- Index pour la table `reservations`
+--
+ALTER TABLE `reservations`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `settings`
 --
 ALTER TABLE `settings`
@@ -134,6 +164,12 @@ ALTER TABLE `admin-cred`
 --
 ALTER TABLE `contact_details`
   MODIFY `sr_no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT pour la table `reservations`
+--
+ALTER TABLE `reservations`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `settings`
